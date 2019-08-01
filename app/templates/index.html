@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<h1> Hello </h1>
+<form method="post" action="/add_message">
+    <input type="text" name="text">
+    <button type="submit">Add message</button>
+    <h1><i>{{ message[0] }}</i></h1>
+
+{% endblock %}
